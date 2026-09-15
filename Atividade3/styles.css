@@ -1,0 +1,335 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333333;
+}
+
+/* Botão do topo fixo que rola junto com a tela */
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4a2574;
+    color: #ffffff;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.btn-topo:hover {
+    background-color: #6b3ba7;
+}
+
+/* Header */
+header {
+    background-color: #2e1745;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.badge {
+    background-color: #6b3ba7;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 15px 0 8px 0;
+}
+
+header .subtitulo {
+    font-size: 1rem;
+    color: #d1c2e0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1f0f30;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #e0d0f0;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 0.88rem;
+}
+
+nav ul li a:hover {
+    background-color: #4a2574;
+    color: #ffffff;
+}
+
+/* Layout Principal */
+.container-principal {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Seções e Tipografia */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2e1745;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e2d8ee;
+    padding-bottom: 4px;
+}
+
+h3 {
+    color: #4a2574;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+}
+
+/* Imagem e Banner */
+.banner {
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.fonte-img {
+    display: block;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* Caixas de Destaque */
+.box-destaque {
+    background-color: #f3ebf9;
+    border-left: 4px solid #6b3ba7;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 0.95rem;
+}
+
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 4px solid #2e1745;
+    padding: 12px 15px;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+/* Grid de Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #fbf9fc;
+    border: 1px solid #e2d8ee;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.card p {
+    font-size: 0.88rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* Tabela */
+.tabela-box {
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2e1745;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.fontes-lista li {
+    list-style: none;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Accordion (FAQ) */
+details {
+    background-color: #fbf9fc;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #2e1745;
+}
+
+details p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-side {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.card-side h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.destaque-side {
+    background-color: #2e1745;
+    color: #ffffff;
+    border: none;
+}
+
+.destaque-side h3 {
+    color: #ffffff;
+    border-bottom-color: #4a2574;
+}
+
+.destaque-side ul {
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2e1745;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: #d1c2e0;
+    text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
