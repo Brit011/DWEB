@@ -1,0 +1,111 @@
+/* Zerando margens e padronizando o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centralizando o container na tela para melhor apresentação */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estrutura base da DIV (500x500 px) */
+.caixa {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo do título H2 */
+.caixa h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* ===================================================
+   BREAKPOINTS (MEDIA QUERIES)
+   Abordagem Mobile-First (do menor para o maior)
+   =================================================== */
+
+/* 1. Até 420px (Cinza / Escuro) */
+@media screen and (max-width: 420px) {
+    .caixa {
+        background-color: #2c3e50; /* Cinza escuro */
+    }
+    .caixa h2::before {
+        content: "Cinza (até 420px)";
+    }
+}
+
+/* 2. De 421px até 768px (Laranja) */
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    .caixa {
+        background-color: #e67e22; /* Laranja */
+    }
+    .caixa h2::before {
+        content: "Laranja (até 768px)";
+    }
+}
+
+/* 3. De 769px até 1024px (Rosa / Magenta) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .caixa {
+        background-color: #e024c3; /* Magenta */
+    }
+    .caixa h2::before {
+        content: "Rosa / Magenta (até 1024px)";
+    }
+}
+
+/* 4. De 1025px até 1080px (Vermelho) */
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
+    .caixa {
+        background-color: #e74c3c; /* Vermelho */
+    }
+    .caixa h2::before {
+        content: "Vermelho (até 1080px)";
+    }
+}
+
+/* 5. De 1081px até 1366px (Roxo) */
+@media screen and (min-width: 1081px) and (max-width: 1366px) {
+    .caixa {
+        background-color: #5b3cc4; /* Roxo */
+    }
+    .caixa h2::before {
+        content: "Roxo (até 1366px)";
+    }
+}
+
+/* 6. De 1367px até 1920px (Amarelo) */
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    .caixa {
+        background-color: #f1c40f; /* Amarelo */
+    }
+    .caixa h2::before {
+        content: "Amarelo (até 1920px)";
+    }
+}
+
+/* 7. Maior que 1920px (Verde) */
+@media screen and (min-width: 1921px) {
+    .caixa {
+        background-color: #27ae60; /* Verde */
+    }
+    .caixa h2::before {
+        content: "Verde (maior que 1920px)";
+    }
+}
