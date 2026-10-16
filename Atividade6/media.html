@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Média do Aluno</title>
+</head>
+<body>
+
+    <h2>Exercício 1 - Média</h2>
+    <button onclick="calcular()">Calcular Média</button>
+
+    <script>
+        function calcular() {
+            if (confirm("Deseja calcular a média de um aluno?")) {
+                let nome = prompt("Nome do aluno:");
+                let n1 = parseFloat(prompt("Nota 1:"));
+                let n2 = parseFloat(prompt("Nota 2:"));
+                let n3 = parseFloat(prompt("Nota 3:"));
+                let n4 = parseFloat(prompt("Nota 4:"));
+
+                let media = (n1 + n2 + n3 + n4) / 4;
+
+                alert("Aluno: " + nome + "\nMédia: " + media.toFixed(2));
+            }
+        }
+    </script>
+</body>
+</html>
