@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô - Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts para um visual moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-card">
+        <h1>Jokenpô</h1>
+        <p class="subtitle">Escolha sua jogada e desafie o computador!</p>
+
+        <!-- Botões de escolha do usuário (fase a) -->
+        <div class="choices-container">
+            <button class="choice-btn" onclick="jogar('pedra')" title="Pedra">
+                <span class="icon">&#9994;</span>
+                <span class="label">Pedra</span>
+            </button>
+            <button class="choice-btn" onclick="jogar('papel')" title="Papel">
+                <span class="icon">📄</span>
+                <span class="label">Papel</span>
+            </button>
+            <button class="choice-btn" onclick="jogar('tesoura')" title="Tesoura">
+                <span class="icon">✂️</span>
+                <span class="label">Tesoura</span>
+            </button>
+        </div>
+
+        <!-- Área de Resultados (fase c) -->
+        <div id="result-container" class="result-container hidden">
+            <div class="selections">
+                <p>Você: <strong id="user-choice">-</strong></p>
+                <p>Computador: <strong id="computer-choice">-</strong></p>
+            </div>
+            <h2 id="winner-text">-</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

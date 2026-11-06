@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.game-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #4a3f75;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+.choices-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+
+.choice-btn {
+    background: #f4f5f7;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 15px 10px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.choice-btn:hover {
+    background: #eef1f6;
+    border-color: #667eea;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.2);
+}
+
+.choice-btn .icon {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.choice-btn .label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.result-container {
+    background: #f8f9fa;
+    padding: 1.2rem;
+    border-radius: 12px;
+    border-left: 5px solid #667eea;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.selections {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+#winner-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+/* Cores dinâmicas para o resultado */
+.vitoria {
+    color: #2ecc71;
+}
+
+.derrota {
+    color: #e74c3c;
+}
+
+.empate {
+    color: #f39c12;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
