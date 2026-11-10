@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa - Filme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pesquisa do Filme</h1>
+        
+        <form id="formPesquisa">
+            <label>Idade:</label>
+            <input type="number" id="idade" min="1" max="120" required>
+
+            <label>Sexo:</label>
+            <select id="sexo" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <label>Opinião:</label>
+            <select id="opiniao" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option value="4">Ótimo (4)</option>
+                <option value="3">Bom (3)</option>
+                <option value="2">Regular (2)</option>
+                <option value="1">Péssimo (1)</option>
+            </select>
+
+            <button type="submit">Cadastrar Resposta</button>
+        </form>
+
+        <div id="contador">Cadastros: <span id="qtd">0</span> / 45</div>
+
+        <div class="resultados">
+            <h2>Resultados</h2>
+            <p>Média de idade: <span id="rMedia">0</span></p>
+            <p>Mais velha: <span id="rVelha">0</span></p>
+            <p>Mais nova: <span id="rNova">0</span></p>
+            <p>Péssimo: <span id="rPessimo">0</span></p>
+            <p>% Ótimo/Bom: <span id="rOtimoBom">0%</span></p>
+            <p>Feminino: <span id="rFem">0</span> | Masculino: <span id="rMasc">0</span> | Outros: <span id="rOutros">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
