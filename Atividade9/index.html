@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 9 - JavaScript</title>
+</head>
+<body>
+    <h1>Atividade 9 - Funções</h1>
+
+    <!-- 1) Maior de 3 números -->
+    <fieldset>
+        <legend>1. Maior de Três Números</legend>
+        <input type="number" id="n1" placeholder="Num 1">
+        <input type="number" id="n2" placeholder="Num 2">
+        <input type="number" id="n3" placeholder="Num 3">
+        <button onclick="testarMaior()">Calcular</button>
+        <p id="res1"></p>
+    </fieldset>
+
+    <!-- 2) Ordem crescente -->
+    <fieldset>
+        <legend>2. Ordem Crescente</legend>
+        <input type="number" id="c1" placeholder="Num 1">
+        <input type="number" id="c2" placeholder="Num 2">
+        <input type="number" id="c3" placeholder="Num 3">
+        <button onclick="testarOrdem()">Ordenar</button>
+        <p id="res2"></p>
+    </fieldset>
+
+    <!-- 3) Palíndromo -->
+    <fieldset>
+        <legend>3. Palíndromo</legend>
+        <input type="text" id="palavra" placeholder="Digite uma palavra ou frase">
+        <button onclick="testarPalindromo()">Verificar</button>
+        <p id="res3"></p>
+    </fieldset>
+
+    <!-- 4) Subconjunto -->
+    <fieldset>
+        <legend>4. Subconjunto</legend>
+        <input type="text" id="p1" placeholder="Palavra principal">
+        <input type="text" id="p2" placeholder="Subconjunto">
+        <button onclick="testarSubconjunto()">Verificar</button>
+        <p id="res4"></p>
+    </fieldset>
+
+    <!-- 5) Dia da semana -->
+    <fieldset>
+        <legend>5. Dia da Semana</legend>
+        <input type="date" id="dataInput">
+        <button onclick="testarData()">Descobrir</button>
+        <p id="res5"></p>
+    </fieldset>
+
+    <!-- Chamando o arquivo JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
